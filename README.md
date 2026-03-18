@@ -32,6 +32,3 @@ npm install
 npm run deploy
 ```
 
-5. In GitHub repository settings, open **Pages** and choose **Deploy from a branch** if needed, or use the `gh-pages` branch created by the deploy script.
-
-If your repository name is different, update `base` in `vite.config.ts` accordingly.

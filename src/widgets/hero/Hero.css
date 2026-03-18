@@ -1,0 +1,94 @@
+.hero {
+  padding: 60px 0;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  padding: 0;
+}
+
+.eyebrow {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-title {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  margin-bottom: 20px;
+  animation: fadeInUp 0.7s ease-out 0.1s both;
+}
+
+.lead {
+  font-size: 1.1rem;
+  max-width: 590px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  line-height: 1.6;
+  animation: fadeInUp 0.7s ease-out 0.2s both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.7s ease-out 0.3s both;
+}
+
+.button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button.primary {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.button.primary:hover {
+  background: var(--accent-color-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(85, 126, 248, 0.3);
+}
+
+.button.ghost {
+  background: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.button.ghost:hover {
+  background: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
