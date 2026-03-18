@@ -24,7 +24,7 @@ export const projects: Project[] = [
       "Vite",
       "Java",
     ],
-    backgroundImage: "./images/trustytech.webp",
+    backgroundImage: "/portfolio/images/trustytech.webp",
 
   },
   {
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     summary:
       "AI-driven polymer synthesis & design platform with responsive, accessible interfaces and interactive data visualization.",
     stack: ["React", "TypeScript", "MUI", "CSS", "SCSS", "Chart.js", "Node.js", "Nest.js", "MongoDB"],
-    backgroundImage: "./images/polinivo.webp",
+    backgroundImage: "/portfolio/images/polinivo.webp",
   },
   {
     name: "FTL Website",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     summary:
       "Company website built with Next.js featuring custom animations, interactive UI elements, and a focus on smooth user experience.",
     stack: ["Next.js", "React", "SASS", "Formik", "Storybook", "Axios", "React Query", "REST API"],
-    backgroundImage: "./images/ftl-web.webp",
+    backgroundImage: "/portfolio/images/ftl-web.webp",
   },
   {
     name: "FTL Internal CRM",
@@ -57,6 +57,6 @@ export const projects: Project[] = [
       "GraphQL",
       "Ruby on Rails",
     ],
-    backgroundImage: "./images/ftl-crm.webp",
+    backgroundImage: "/portfolio/images/ftl-crm.webp",
   },
 ];
