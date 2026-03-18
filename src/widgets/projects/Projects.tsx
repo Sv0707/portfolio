@@ -9,18 +9,7 @@ export const Projects: React.FC = () => {
       </div>
       <div className="project-grid">
         {projects.map((project, index) => (
-          <article 
-            className="card project-card" 
-            key={project.name} 
-            style={{ 
-              '--delay': `${index * 0.1}s`,
-              ...(project.backgroundImage && {
-                backgroundImage: `url('${project.backgroundImage}')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-              })
-            } as React.CSSProperties}
-          >
+          <article className="card project-card" key={project.name} style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}>
             <div className="project-topline">
               {project.link ? (
                 <a href={project.link} target="_blank" rel="noopener noreferrer">

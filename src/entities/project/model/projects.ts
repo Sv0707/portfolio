@@ -4,7 +4,6 @@ export interface Project {
   summary: string;
   stack: string[];
   link?: string;
-  backgroundImage?: string;
 }
 
 export const projects: Project[] = [
@@ -24,7 +23,6 @@ export const projects: Project[] = [
       "Vite",
       "Java",
     ],
-    backgroundImage: "/images/trustytech.webp",
   },
   {
     name: "Polinivo",
@@ -32,7 +30,6 @@ export const projects: Project[] = [
     summary:
       "Software solution for the polymer industry with responsive, accessible interfaces and interactive data visualization for desktop and mobile.",
     stack: ["React", "TypeScript", "MUI", "Node.js", "CSS", "SCSS", "Chart.js"],
-        backgroundImage: "/images/polinivo.webp",
   },
   {
     name: "FTL Website",

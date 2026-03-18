@@ -11,55 +11,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  min-height: 300px;
-  padding: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(95, 126, 248, 0.15);
-}
-
-[data-theme='dark'] .project-card:hover {
-  box-shadow: 0 8px 24px rgba(141, 162, 255, 0.2);
-}
-
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
-  pointer-events: none;
-  z-index: 1;
-  transition: opacity 0.3s ease;
-}
-
-[data-theme='light'] .project-card::before {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
-}
-
-.project-card:hover::before {
-  opacity: 0.9;
-}
-
-[data-theme='light'] .project-card:hover::before {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-}
-
-.project-card > * {
-  position: relative;
-  z-index: 2;
 }
 
 .project-topline {
@@ -108,11 +59,6 @@
 
 .highlights span:hover {
   background: var(--accent-color);
-  color: var(--bg-primary);
+  color: #fff;
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(95, 126, 248, 0.3);
-}
-
-[data-theme='dark'] .highlights span:hover {
-  box-shadow: 0 4px 12px rgba(141, 162, 255, 0.4);
 }
