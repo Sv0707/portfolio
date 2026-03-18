@@ -4,6 +4,7 @@ export interface Project {
   summary: string;
   stack: string[];
   link?: string;
+  backgroundImage?: string;
 }
 
 export const projects: Project[] = [
@@ -23,20 +24,24 @@ export const projects: Project[] = [
       "Vite",
       "Java",
     ],
+    backgroundImage: "./images/trustytech.webp",
+
   },
   {
     name: "Polinivo",
     period: "Nov 2022 — Apr 2024",
     summary:
-      "Software solution for the polymer industry with responsive, accessible interfaces and interactive data visualization for desktop and mobile.",
-    stack: ["React", "TypeScript", "MUI", "Node.js", "CSS", "SCSS", "Chart.js"],
+      "AI-driven polymer synthesis & design platform with responsive, accessible interfaces and interactive data visualization.",
+    stack: ["React", "TypeScript", "MUI", "CSS", "SCSS", "Chart.js", "Node.js", "Nest.js", "MongoDB"],
+    backgroundImage: "./images/polinivo.webp",
   },
   {
     name: "FTL Website",
     period: "Aug 2022 — Apr 2024",
     summary:
       "Company website built with Next.js featuring custom animations, interactive UI elements, and a focus on smooth user experience.",
-    stack: ["Next.js", "React", "SASS", "REST API"],
+    stack: ["Next.js", "React", "SASS", "Formik", "Storybook", "Axios", "React Query", "REST API"],
+    backgroundImage: "./images/ftl-web.webp",
   },
   {
     name: "FTL Internal CRM",
@@ -45,12 +50,13 @@ export const projects: Project[] = [
       "Internal CRM system with interactive frontend features, reusable components, and integrations with REST and GraphQL APIs.",
     stack: [
       "React",
-      "Redux Toolkit",
+      "Redux",
       "React Query",
       "SASS",
       "Storybook",
       "GraphQL",
       "Ruby on Rails",
     ],
+    backgroundImage: "./images/ftl-crm.webp",
   },
 ];

@@ -7,10 +7,22 @@ export const Projects: React.FC = () => {
       <div className="section-heading">
         <h2>Projects</h2>
       </div>
+
       <div className="project-grid">
         {projects.map((project, index) => (
-          <article className="card project-card" key={project.name} style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}>
-            <div className="project-topline">
+          <article
+            className={`card project-card ${project.backgroundImage ? 'project-card--with-bg' : ''}`}
+            key={project.name}
+            style={
+              {
+                '--delay': `${index * 0.1}s`,
+                ...(project.backgroundImage && {
+                  '--project-bg': `url('${project.backgroundImage}')`,
+                }),
+              } as React.CSSProperties
+            }
+          >
+            <div className="project-card__header">
               {project.link ? (
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <h3>{project.name}</h3>
@@ -20,11 +32,14 @@ export const Projects: React.FC = () => {
               )}
               <span>{project.period}</span>
             </div>
-            <p>{project.summary}</p>
-            <div className="highlights">
-              {project.stack.map((el) => (
-                <span key={el}>{el}</span>
-              ))}
+            <div className="project-card__footer">
+              <p>{project.summary}</p>
+
+              <div className="highlights">
+                {project.stack.map((el) => (
+                  <span key={el}>{el}</span>
+                ))}
+              </div>
             </div>
           </article>
         ))}
